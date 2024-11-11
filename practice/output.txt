@@ -1,0 +1,3 @@
+2 3 5 7 
+primeCount: 4 
+PrimeSum:17
