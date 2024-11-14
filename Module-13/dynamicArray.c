@@ -16,16 +16,30 @@ for(int i=0;i<n;i++){
 for(int i=0;i<n;i++){
     printf("%d ",*(ptr+i));
 }
-printf("\nenter new N\n");
-scanf("%d",&n);
-int *p=(int*)realloc(ptr,n*sizeof(int));
+printf("\n");
+//printf("\nenter new N\n");
+int m;
+scanf("%d",&m);
+int *p=(int*)realloc(ptr,m*sizeof(int));
 
-for(int i=0;i<n;i++){
+for(int i=n;i<m;i++){
     scanf("%d",(ptr+i));
 }
 
-for(int i=0;i<n;i++){
+for(int i=0;i<m;i++){
     printf("%d ",*(p+i));
 }
 
 }
+/*
+input
+3
+20 5 1 
+8
+0 10 20 30 5
+
+output
+20 5 1 
+20 5 1 0 10 20 30 5 
+
+*/
